@@ -128,15 +128,8 @@ GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpressuser'@'localhost' IDENTIFIED BY
 2. 输入您的问题或选择预设的问题选项来与 Rasa 机器人互动。
 3. 根据机器人的回复获取帮助和资源。
 
-### WordPress 自定义配置
-
-1. 如果需要对 WordPress 进行自定义配置（例如更改主题、安装插件等），请参考 [WordPress 官方文档](https://wordpress.org/support/)。
-2. 对于特定的配置或自定义内容（如自定义页面、菜单或部件），请遵循相关的指南或教程。
-
-### Rasa 机器人服务器配置
-
-1. Rasa 机器人的服务器地址可能需要根据您的服务器配置进行调整。
-2. 如果您需要更改 Rasa 机器人的服务器 URL 或进行其他相关配置，请参考 [Rasa 官方文档](https://rasa.com/docs/)。
+### WordPress 性别偏见检测器
+1. 分析招聘广告中的性别编码词汇，避免使用可能对某些性别产生负面影响的词语，从而创造一个更公平、更包容的招聘环境。用户只需将招聘广告描述复制到文本框中，工具即可自动审查并提示调整建议。
 
 ### 注意
 
