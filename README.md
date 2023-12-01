@@ -60,8 +60,9 @@ tar -xzvf latest.tar.gz
 mysql -u root -p
 CREATE DATABASE wordpress;
 GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpressuser'@'localhost' IDENTIFIED BY 'password';
-
+```
 ### 3. 配置Wordpress
+```bash
 # 配置 wp-config.php
 # 将 wp-config-sample.php 重命名为 wp-config.php
 # 编辑 wp-config.php，填入数据库信息
@@ -69,4 +70,25 @@ GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpressuser'@'localhost' IDENTIFIED BY
 # 通过 Web 界面完成安装
 # 在浏览器中访问 http://your_server_ip
 # 按照指引完成 WordPress 安装过程
+```
+### 4. 安装并配置项目所需插件和主题
+```bash
+# 登录 WordPress 后台
+# 转到 "插件" -> "添加新主题（建议主题Hello Elementor）"
+# 搜索并安装所需插件
+# 转到 "外观" -> "主题"，安装并激活所需主题
+```
+插件如下图：
+![图片描述](https://private-user-images.githubusercontent.com/55655782/287158087-8c48ecfe-1840-4bb2-96f5-f9ba16f147b6.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MDkzMTksIm5iZiI6MTcwMTQwOTAxOSwicGF0aCI6Ii81NTY1NTc4Mi8yODcxNTgwODctOGM0OGVjZmUtMTg0MC00YmIyLTk2ZjUtZjliYTE2ZjE0N2I2LlBORz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDA1MzY1OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgxYTliOGY2YjZhOTE4ZTkxOGVmNmExNTU1MDVmZmE5OTkxZDJhYWQ0ODE5ODk3NjFkYTQzN2FlMDU5NzIyZGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.uvR2nYaBM49MhjqGePsPHEMq395moAHDgCFvcvz2L_U)
+
+### 5. 并导入备份文件
+### 导入备份文件
+
+这一步骤通常用于恢复网站或将网站从开发环境迁移到生产环境。它包括：
+
+- **导入数据库备份**：使用备份插件或 phpMyAdmin 将数据库备份文件导入到新的数据库中。
+- **导入文件备份**：这包括 `wp-content` 目录中的所有文件，如插件、主题、上传的媒体文件等。
+- **配置网站**：在导入备份之后，可能需要重新配置一些网站设置，如网站地址（URL）和连接字符串。
+
+
 
