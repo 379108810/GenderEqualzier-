@@ -60,7 +60,8 @@ tar -xzvf latest.tar.gz
 mysql -u root -p
 CREATE DATABASE wordpress;
 GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpressuser'@'localhost' IDENTIFIED BY 'password';
-###配置Wordpress
+
+### 3. 配置Wordpress
 # 配置 wp-config.php
 # 将 wp-config-sample.php 重命名为 wp-config.php
 # 编辑 wp-config.php，填入数据库信息
