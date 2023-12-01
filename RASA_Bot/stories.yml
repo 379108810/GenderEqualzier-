@@ -1,0 +1,105 @@
+version: "3.1"
+
+stories:
+- story: get start
+  steps:
+  - intent: get_started
+  - action: utter_get_started
+  - action: utter_want_help
+  
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_want_help
+
+
+
+#- story: sad path 1
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+ # - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: affirm
+ # - action: utter_happy
+
+#- story: sad path 2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: deny
+ # - action: utter_goodbye
+
+- story: ask about gender bias definition
+  steps:
+  - intent: ask_gender_bias_definition
+  - action: utter_gender_bias_definition
+  - intent: ask_more_info
+  - action: utter_more_info
+  - action: utter_gender_bias_definition
+
+- story: ask about gender bias solution
+  steps:
+  - intent: ask_gender_bias_solution
+  - action: utter_gender_bias_solution
+  - intent: ask_more_info
+  - action: utter_more_info
+  - action: utter_gender_bias_solution
+
+- story: ask about gender bias stories
+  steps:
+  - intent: ask_gender_bias_story
+  - action: utter_tell_stories
+- story: reply ok
+  steps:
+  - intent: affirm_okok
+  - action: utter_affirm_okok
+
+
+## Story for asking resources about gender bias
+- story: User asks for resources
+  steps:
+  - intent: ask_educational_resources
+  - action: utter_educational_resources
+  
+## Story for asking articles about gender bias
+- story: User asks for articles on gender bias
+  steps:
+  - intent: ask_gender_bias_articles
+  - action: utter_gender_bias_articles
+
+
+## Story for asking videos about gender bias
+- story: User asks for videos on gender bias
+  steps:
+  - intent: ask_gender_bias_videos
+  - action: utter_video_gender_equality_understanding
+  - action: utter_video_what_can_you_do
+  
+## Story for asking about understanding gender equality
+#- story: User asks for video on understanding gender equality
+#  steps:
+#  - intent: ask_video_gender_equality_understanding
+#  - action: utter_video_gender_equality_understanding
+
+## Story for asking about what can you do for gender equality
+#- story: User asks for video on what can you do for gender equality
+#  steps:
+# - intent: ask_video_what_can_you_do
+#  - action: utter_video_what_can_you_do
+
+
+
+
+
+
+## Story for asking online classes about gender bias
+
+
+

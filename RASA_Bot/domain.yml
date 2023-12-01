@@ -1,0 +1,389 @@
+version: "3.1"
+
+intents:
+  - get_started
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_gender_bias_definition
+  - ask_gender_bias_solution
+ 
+  - ask_more_info
+  - affirm_okok
+  - ask_educational_resources
+  - ask_gender_bias_articles
+
+  - ask_gender_bias_videos
+  - ask_video_gender_equality_understanding
+  - ask_video_what_can_you_do
+
+
+  - ask_gender_bias_story
+responses:
+  utter_get_started:
+  - text: "Hello! I'm the genderequalizer assistant. Nice to meet you. How can I assist you today?"
+  
+  - text: "Hey there! It's the genderequalizer bot here. What can I do for you today?"
+  - text: "Greetings! Your friendly genderequalizer bot reporting for duty. How can I help?"
+
+  utter_want_help:
+  - text: "You can ask me information about gender bias definition, request solutions, tell a story about gender bias or educational resources."
+    buttons:
+    - title: "What is gender bias?"
+      payload: "/ask_gender_bias_definition"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational_resources."
+      payload: "/ask_educational_resources"
+
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hello again! How can I help you today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "Remember, every cloud has a silver lining."
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+  - text: "Feeling better now?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+  - text: "That's the spirit!"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Take care! Remember, I'm here whenever you need."
+
+  utter_iamabot:
+  - text: "I am a bot, powered by TP19."
+  - text: "Indeed, I'm a bot. But I'm here to help!"
+
+  utter_gender_bias_definition:
+  - text: "Gender bias refers to the unequal treatment or perceptions of individuals based on their gender. It arises from differences in socially constructed gender roles and may manifest in various ways, such as discrimination in the workplace, stereotypes, and unequal opportunities."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"      
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "Gender bias is the tendency to prefer one gender over another. It's a form of discrimination that stems from cultural, societal, or historical beliefs and practices that promote the idea that one gender is superior to another."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"      
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  
+  
+  - text: "At its core, gender bias is the inclination to have preconceived notions about individuals based on their gender, rather than their abilities or merits."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "Gender bias is a deep-rooted issue that stems from long-standing societal norms and practices. It's the act of favoring or discriminating against individuals based on their gender rather than their capabilities."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  
+  - text: "Gender bias is a prejudiced perspective or unjust practice rooted in traditional gender roles, which can limit opportunities for individuals based on their gender."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "It is the systemic inclination to judge individuals by the confines of traditional gender norms rather than by their actions or talents."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "A result of societal constructs, gender bias promotes stereotypes and determines what is 'appropriate' for males and females."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "Gender bias encompasses a spectrum of prejudices that stem from the over-generalization of masculine or feminine characteristics."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "It often manifests as an inherent favoritism, giving an unfair advantage or disadvantage to individuals based on their gender."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "A societal ailment, gender bias impacts opportunities, expectations, and perceptions of individuals in personal and professional realms."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "Gender bias is the unequal weighing of the abilities or potentials of an individual based purely on their gender."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "It thrives on outdated gender norms and leads to discrimination, unequal representation, and missed opportunities."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "Subtle or overt, gender bias influences everyday decisions, from hiring processes to societal expectations."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "A consequence of age-old beliefs, gender bias restricts the progress of societies by limiting potentials based on gender."
+
+
+  utter_gender_bias_solution:
+  - text: "Combating gender bias requires a multi-faceted approach. It's essential to raise awareness, challenge stereotypes, promote gender equality in workplaces, and ensure equal opportunities for all regardless of gender."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "What is gender bias?"
+      payload: "/ask_gender_bias_definition"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "To address gender bias, we need to educate ourselves and others, challenge our own biases, support policies that promote gender equality, and celebrate diversity. It's a collective effort that requires the involvement of individuals, communities, and organizations."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "What is gender bias?"
+      payload: "/ask_gender_bias_definition"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"  
+  - text: "One of the first steps to combat gender bias is self-awareness. Recognizing our own biases and actively working to change them can make a significant difference. Additionally, promoting and participating in gender sensitivity training can be beneficial."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "What is gender bias?"
+      payload: "/ask_gender_bias_definition"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"  
+  - text: "Creating an inclusive environment, where everyone is treated with respect and dignity regardless of their gender, is crucial. This includes equal pay, equal opportunities, and a workplace free from discrimination and harassment."
+    buttons:
+    - title: "Ask more"
+      payload: "/ask_more_info"
+    - title: "What is gender bias?"
+      payload: "/ask_gender_bias_definition"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"  
+
+
+  utter_more_info:
+  - text: "Sure, here's more information..."
+
+  utter_default:
+  - text: "Sorry, I can not understand you, please ask me more related questions. Please tell me what do you want?"
+    buttons:
+    - title: "What is gender bias?"
+      payload: "/ask_gender_bias_definition"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"    
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  utter_affirm_okok:
+  - text: "Noted! Anything else?"
+    buttons:
+    - title: "What is gender bias?"
+      payload: "/ask_gender_bias_definition"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"     
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "Understood! How can I assist further?"
+    buttons:
+    - title: "What is gender bias?"
+      payload: "/ask_gender_bias_definition"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"      
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "Got it! Let me know if there's anything else."
+    buttons:
+    - title: "What is gender bias?"
+      payload: "/ask_gender_bias_definition"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+  - text: "Alright! Is there anything else you'd like to know?"
+    buttons:
+    - title: "What is gender bias?"
+      payload: "/ask_gender_bias_definition"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+
+
+# educational resources
+  utter_educational_resources:
+  - text: "We have three different resources(articles, videos), which one do you want?"
+    buttons:
+    - title: "Show me videos on gender bias."
+      payload: "/ask_gender_bias_videos"
+    - title: "I'd like to read articles."
+      payload: "/ask_gender_bias_articles"
+
+
+
+
+  utter_gender_bias_articles:
+  - text: "Sure! Here are some articles on gender bias: [What is gender equality?](https://www.unisa.edu.au/media-centre/Releases/2021/everyday-hacks-that-counter-gender-inequality/), [Why is gender equality so important？](https://www.stkate.edu/academics/women-in-leadership-degrees/blog/gender-bias-in-the-workplace), [What can I do to prevent gender bias?](https://www.unisa.edu.au/media-centre/Releases/2021/everyday-hacks-that-counter-gender-inequality/) ..."
+    buttons:
+    - title: "What is gender bias?"
+      payload: "/ask_gender_bias_definition"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "Show me videos on gender bias."
+      payload: "/ask_gender_bias_videos"
+
+
+
+  utter_video_gender_equality_understanding:
+  - text: "Here's a video on 'Understanding Gender Equality': [Click here to watch](https://www.youtube.com/watch?v=HbQjlPoBA3U)"
+
+
+  utter_video_what_can_you_do:
+  - text: "Check out this video on 'What can you do?': [Click here to watch](https://www.youtube.com/watch?v=B94dWS9kG9I)"
+    buttons:
+    - title: "What is gender bias?"
+      payload: "/ask_gender_bias_definition"
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: Tell me a story about gender bias
+      payload: "/ask_gender_bias_story"
+    - title: "I'd like to read articles."
+      payload: "/ask_gender_bias_articles"
+
+
+
+
+  utter_anything_else:
+  - text: "Anything else?"
+
+
+  utter_tell_stories:
+  - text: "Sarah's Unexpected Journey:\n\nSarah had always been passionate about technology. From building tiny robots at the age of 8 to mastering computer code in high school, she was destined for a career in tech. But she noticed a pattern - in her advanced tech classes, she was often one of the few girls. \n\nOne summer, she interned at a renowned tech company and felt the weight of gender bias. Her ideas were often overlooked, and colleagues would sometimes mistake her for an assistant rather than a programmer. But Sarah was resilient. She began collaborating with Emma, another intern, and together they developed a breakthrough software. When presented, it stunned everyone, leading the team to a significant success. \n\nThe story spread, and Sarah and Emma soon became role models for girls in tech. They went on to start an initiative that encouraged diversity in the tech world."
+    buttons:
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: "Tell me another story about gender bias"
+      payload: "/ask_gender_bias_story"      
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+
+  - text: "Alice's Artistic Rise:\n\nAlice, a talented painter, had been turned down by multiple art galleries. Her work, they said, was 'too feminine' and might not attract a wider audience. Undeterred, Alice decided to organize her own art show in a local community center. \n\nThe turnout was beyond her wildest expectations. People from all walks of life came to see her art, many moved by the depth and emotion in her work. A famous art critic who attended said, 'In a world where everyone is trying to fit in, Alice's work stands out.' \n\nThe next week, three galleries approached her for exhibitions. Alice had made her mark by staying true to herself and challenging the status quo."
+    buttons:
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: "Tell me another story about gender bias"
+      payload: "/ask_gender_bias_story"      
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+
+  - text: "Dr. Mia's Impossible Surgery:\n\nDr. Mia was one of the top surgeons in her city, known for taking on cases that others deemed too complex. But when she was presented with a particularly challenging case, many doubted her capabilities, not because of her skills, but because she was a woman. \n\nThe surgery was critical, and the odds weren't favorable. But Dr. Mia believed in her expertise. Hours seemed like minutes, and with her team, she conducted what was later termed as 'the impossible surgery'. \n\nThe patient recovered remarkably, and the medical community was abuzz. They hailed Dr. Mia not just for her surgical prowess but for breaking the shackles of gender bias in a male-dominated sphere."
+    buttons:
+    - title: "How to solve gender bias?"
+      payload: "/ask_gender_bias_solution"
+    - title: "Tell me another story about gender bias"
+      payload: "/ask_gender_bias_story"      
+    - title: "Show me the educational resources."
+      payload: "/ask_educational_resources"
+
+
+
+
+session_config:
+  session_expiration_time: 30
+  carry_over_slots_to_new_session: false

@@ -1,0 +1,35 @@
+version: "3.1"
+
+rules:
+
+#- rule: Say utter_get_started and utter_want_help at the beginning of the session
+ # steps:
+  #- action: action_session_start
+  #- action: utter_get_started
+  #- action: utter_want_help
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  
+- rule: Provide definition for gender bias
+  steps:
+  - intent: ask_gender_bias_definition
+  - action: utter_gender_bias_definition
+
+- rule: Provide solution for gender bias
+  steps:
+  - intent: ask_gender_bias_solution
+  - action: utter_gender_bias_solution
+
+
+- rule: Fallback Rule
+  steps:
+  - action: action_default_fallback
+  - action: utter_default

@@ -1,0 +1,325 @@
+version: "3.1"
+
+nlu:
+
+- intent: get_started
+  examples: |
+    - start
+    - begin
+    - get started
+    - let's go
+    - kick off
+    - initiate
+    - commence
+    - let's begin
+    - start the session
+    - initiate conversation
+    - let's start
+    - ready to start
+    - can we start?
+    - I want to start
+    - begin now
+    - let's get going
+    - start up
+    - launch
+    - activate
+    - proceed
+    - embark
+    - fire up
+
+ 
+
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hello bot
+#- intent: goodbye
+#  examples: |
+ #   - cu
+ #   - good by
+  #  - cee you later
+  #  - good night
+  #  - bye
+  #  - goodbye
+  #  - have a nice day
+   # - see you around
+   # - bye bye
+ #   - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+#- intent: mood_great
+ # examples: |
+  #  - perfect
+   # - great
+    #- amazing
+    #- feeling like a king
+    #- wonderful
+    #- I am feeling very good
+    #- I am great
+    #- I am amazing
+    #- I am going to save the world
+    #- super stoked
+    #- extremely good
+    #- so so perfect
+    #- so good
+    #- so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_gender_bias_definition
+  examples: |
+    - What is gender bias?
+    - Can you define gender bias for me?
+    - What do you mean by gender bias?
+    - Explain gender bias.
+    - Tell me about gender bias.
+    - I've heard about gender bias, can you clarify?
+    - What's the meaning of gender bias?
+    - Can you explain the term gender bias?
+    - I'm not clear about gender bias, can you help?
+    - Describe gender bias to me.
+    - How do you understand gender bias?
+    - What can you tell me about bias based on gender?
+    - I'm unfamiliar with gender bias. What is it?
+    - How would you describe the concept of gender bias?
+    - Can you break down the term gender bias for me?
+    - I've come across the term gender bias. What does it entail?
+    - Could you provide a definition for gender bias?
+    - I'm trying to understand gender bias. Can you provide some clarity?
+    - How does one define gender bias?
+    - I've been hearing about gender bias. What is it exactly?
+    - In your words, what's gender bias?
+    - I'm curious about gender bias. Can you elaborate?
+    - What exactly do you mean when you say gender bias?
+    - Help me understand the concept of gender bias.
+    - I'm trying to get a grasp on gender bias. Can you explain?
+    - I want to know what gender bias is.
+    - I want to know more about gender bias. Can you explain?
+    - I've been wondering about gender bias. What is it?
+    - I want to know the definition of gender bias.
+    - Can you help me? I want to know about gender bias.
+    - I've heard a lot lately about gender bias, and I want to know what it means.
+    - I'm doing some research, and I want to know the concept of gender bias.
+    - I've been reading up on societal issues, and I want to know about gender bias.
+    - Gender bias is a term I've come across recently. I want to know its definition.
+    - Everyone is talking about gender bias. I want to know its implications.
+
+
+
+- intent: ask_gender_bias_solution
+  examples: |
+    - How can I combat gender bias?
+    - What's your take on gender bias solutions?
+    - Can you help me understand how to deal with gender bias?
+    - How to address gender bias?
+    - What are the ways to reduce gender bias?
+    - How can we fight against gender bias?
+    - What measures can be taken to counteract gender bias?
+    - How can we promote gender equality?
+    - What are some strategies to overcome gender bias?
+    - Can you suggest ways to challenge gender bias?
+    - Are there effective methods to tackle gender bias?
+    - How can I contribute to reducing gender bias?
+    - In what ways can we stand up against gender discrimination?
+    - What actionable steps can be taken to diminish gender bias?
+    - Can you give insights on best practices to handle gender bias?
+    - How can individuals and organizations resist gender bias?
+    - How do you suggest one can approach gender bias mitigation?
+    - I'd like to know more about gender bias countermeasures. Can you share?
+    - What are some proactive steps to ensure gender fairness?
+    - How can we foster an environment that diminishes gender bias?
+    - Are there tools or resources to help combat gender bias?
+    - Can you provide guidelines on challenging prevailing gender biases?
+    - How do we create awareness and understanding about gender bias solutions?
+    - What's the best way to be proactive against gender bias in the workplace?
+    - I'm keen on learning more about gender equality initiatives. Can you guide me?
+
+- intent: ask_gender_bias_story
+  examples: |
+    - Can you tell me a story about gender bias?
+    - I'd love to hear a gender bias related story.
+    - Share a narrative about gender inequality.
+    - Have any stories about gender discrimination?
+    - What's a good tale on gender bias?
+    - I'm interested in stories about gender inequality. Can you share one?
+    - Do you have any inspiring gender bias stories?
+    - I want to learn more through stories. Any on gender bias?
+
+
+
+- intent: ask_more_info
+  examples: |
+    - Anything else?
+    - Continue.
+    - What else can you tell me?
+    - Do you have other options?
+    - Keep going.
+    - More, please.
+    - Can you elaborate more?
+    - Don't stop now.
+    - I'd like to hear more.
+    - What's next?
+    - Go on.
+    - I'm listening, please proceed.
+    - Expand on that, please.
+    - What comes after?
+    - Please tell me more.
+    - What else is there?
+    - Is there more to it?
+    - I'm interested, keep explaining.
+    - What other options do I have?
+    - Further details, please.
+    - Let's dive deeper.
+    - Can you provide more insight?
+    - Please, continue your thought.
+
+- intent: affirm_okok
+  examples: |
+    - Ok
+    - okok
+    - Already
+    - OKOK
+    - ok ok
+    - Alright alright
+    - sure sure
+    - got it got it
+    - understood understood
+    - yes yes
+    - okay okay
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+
+- intent: ask_educational_resources
+  examples: |
+    - Can you provide me with some educational resources?
+    - I need learning materials on gender bias.
+    - Where can I find more study resources on this topic?
+    - Do you have any educational content related to gender equality?
+    - I want to study further. Can you help with materials?
+    - Point me to some good learning resources, please.
+    - I'm looking to educate myself more on this subject.
+    - Show me some tutorials or resources to understand better.
+    - I'm keen to learn more. Do you have any resources?
+    - Provide me with some quality educational content.
+    - Any reading materials or courses you can suggest?
+    - Can you recommend some learning resources?
+
+
+
+
+
+- intent: ask_gender_bias_articles
+  examples: |
+    - articles
+    - Articles
+    - gender bias articles
+    - Can you show me some articles about gender bias?
+    - I'm looking for articles on gender bias.
+    - Do you have any recommended readings on gender bias?
+    - Where can I find articles related to gender bias?
+
+- intent: ask_gender_bias_videos
+  examples: |
+    - videos
+    - I want to watch videos on gender bias.
+    - Can you suggest some videos about gender bias?
+    - Are there any good video resources on this topic?
+    - Show me some gender bias related videos.
+    - Gender bias video recommendations?
+    - Videos on gender bias?
+    - Which are the best videos about gender discrimination?
+    - I'd like to see some gender equality videos.
+    - Can you link me to some informative videos on gender bias?
+    - I'm interested in watching more about this topic. Any video suggestions?
+    - Do you have clips or documentaries on gender bias?
+    - What are some must-watch videos about gender equality and bias?
+    - Point me to some gender bias video content.
+    - Looking for visual content on gender issues. Any videos?
+    - Gender bias explained in videos?
+    - I prefer visual learning. Any videos on gender bias you'd suggest?
+
+
+- intent: ask_video_gender_equality_understanding
+  examples: |
+    - Can you show me a video about understanding gender equality?
+    - I want to watch a video on gender equality understanding.
+    - Show me a clip about understanding gender equality.
+    - I'm interested in a video about gender equality. Do you have one?
+
+- intent: ask_video_what_can_you_do
+  examples: |
+    - Can you show me a video about what can be done for gender equality?
+    - I want to watch a video on what actions can be taken for gender equality.
+    - Show me a clip about what one can do for gender equality.
+    - Do you have a video on actions towards gender equality?
+
+
+
+
+
