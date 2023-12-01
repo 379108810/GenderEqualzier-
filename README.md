@@ -37,4 +37,35 @@
 ![图片描述](https://private-user-images.githubusercontent.com/55655782/287146400-baeb36bb-56d6-4663-ad7c-0ede9e38aaa3.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MDUzMzIsIm5iZiI6MTcwMTQwNTAzMiwicGF0aCI6Ii81NTY1NTc4Mi8yODcxNDY0MDAtYmFlYjM2YmItNTZkNi00NjYzLWFkN2MtMGVkZTllMzhhYWEzLlBORz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDA0MzAzMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNlNjY0MzkwMTU1YjkxMzhhZTk1NDQ4ZDg1ZDE4OTNjMjhjODk4M2Q4OTdhMDc0Yzk4Njk2NWIwZTE3YjY1MGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.IDEOGuBxXn_0dVeR3VDkGWUOBgE53jy6Nvz5csHgB0I)
 ![图片描述](https://private-user-images.githubusercontent.com/55655782/287146410-b125466a-bfc9-42b7-9019-dd80e3da60ed.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MDUzMzIsIm5iZiI6MTcwMTQwNTAzMiwicGF0aCI6Ii81NTY1NTc4Mi8yODcxNDY0MTAtYjEyNTQ2NmEtYmZjOS00MmI3LTkwMTktZGQ4MGUzZGE2MGVkLlBORz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDA0MzAzMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI3MmYzZDE3ODA1M2MwZWIyMWEwODljNzIzZmE1OGVkYjRjNWQzMmZiNmU3YTgyYTE4NmYzNDBiZmU5YjczODMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.BF3SsFaimcUGzPMw2-Rm6mbtjF3fYvORfHI_jmWLMHY)
 
+## 使用步骤
+
+### 1. 申请服务器
+
+- 选择云服务提供商并创建虚拟服务器。
+- 访问 [云服务提供商网站]。
+- 按照提供商的指南创建一个新的虚拟服务器实例。
+
+### 2. 安装 WordPress
+
+```bash
+# 连接到服务器
+ssh username@your_server_ip
+
+# 安装 WordPress
+wget https://wordpress.org/latest.tar.gz
+tar -xzvf latest.tar.gz
+# 将 WordPress 文件移动到 web 服务器目录
+
+# 设置数据库（如果使用 MySQL）
+mysql -u root -p
+CREATE DATABASE wordpress;
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpressuser'@'localhost' IDENTIFIED BY 'password';
+###配置Wordpress
+# 配置 wp-config.php
+# 将 wp-config-sample.php 重命名为 wp-config.php
+# 编辑 wp-config.php，填入数据库信息
+
+# 通过 Web 界面完成安装
+# 在浏览器中访问 http://your_server_ip
+# 按照指引完成 WordPress 安装过程
 
