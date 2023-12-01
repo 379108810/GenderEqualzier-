@@ -169,6 +169,10 @@ GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpressuser'@'localhost' IDENTIFIED BY
 
 2. **调试和测试**：
    - 在进行更改并上传到生产服务器之前，建议在本地环境或测试服务器上进行充分的调试和测试。
+3. **SSL证书**：
+   - 为了确保数据在交互过程中的安全性，网站必须配置SSL证书。用户需参考云服务器的技术文档，自行完成相关证书的安装与配置。
+
+
 
 
 
