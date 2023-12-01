@@ -81,6 +81,27 @@ GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpressuser'@'localhost' IDENTIFIED BY
 插件如下图：
 ![图片描述](https://private-user-images.githubusercontent.com/55655782/287158087-8c48ecfe-1840-4bb2-96f5-f9ba16f147b6.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MDkzMTksIm5iZiI6MTcwMTQwOTAxOSwicGF0aCI6Ii81NTY1NTc4Mi8yODcxNTgwODctOGM0OGVjZmUtMTg0MC00YmIyLTk2ZjUtZjliYTE2ZjE0N2I2LlBORz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDA1MzY1OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgxYTliOGY2YjZhOTE4ZTkxOGVmNmExNTU1MDVmZmE5OTkxZDJhYWQ0ODE5ODk3NjFkYTQzN2FlMDU5NzIyZGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.uvR2nYaBM49MhjqGePsPHEMq395moAHDgCFvcvz2L_U)
 
+### 安装RASA 并训练
+1. **安装 RASA**：首先，您需要在服务器上安装 RASA，请参考 [RASA 官方文档](https://rasa.com/docs/)。
+2. 配置相关文件：
+   - domian
+   - config
+   - nlu
+   - rules
+   - stories
+3. 训练模型
+   ```bash
+   rasa train
+
+   ```
+### 下载GenderDecoder插件
+将 Gender Decoder 插件文件或文件夹复制到您的 WordPress 安装目录中的 `wp-content/plugins` 目录下。具体步骤如下：
+
+1. **定位插件**：找到包含 Gender Decoder 插件的文件夹。
+2. **复制插件**：将该插件下载并复制到您的 WordPress 目录下的 `wp-content/plugins` 文件夹中。
+3. **激活插件**：登录您的 WordPress 后台，转到“插件”页面，找到 Gender Decoder 插件并点击“激活”。
+   
+
 ### 5. 并导入备份文件
 ### 导入备份文件
 
