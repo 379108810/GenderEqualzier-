@@ -1,4 +1,4 @@
-# Gender Equalizer
+# Gender Equalizer (GenderEqualizer.life)
 
 ## 介绍
 
