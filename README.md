@@ -157,7 +157,8 @@ GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpressuser'@'localhost' IDENTIFIED BY
 ### Rasa 机器人配置
 
 1. **服务器 URL 配置**：
-   - 如果您使用了 Rasa 机器人，确保在机器人的配置文件中正确设置了服务器 URL，并且添加进wordpress的程序中。
+   - 如果您使用了 Rasa 机器人，确保在wordpress的snippets插件中的相关程序里正确设置了服务器 URL。
+   ![图片描述](https://private-user-images.githubusercontent.com/55655782/287190782-8a89d9a4-4470-47e3-b4b4-6bfceac35660.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MTUzNDAsIm5iZiI6MTcwMTQxNTA0MCwicGF0aCI6Ii81NTY1NTc4Mi8yODcxOTA3ODItOGE4OWQ5YTQtNDQ3MC00N2UzLWI0YjQtNmJmY2VhYzM1NjYwLlBORz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDA3MTcyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE4NTU4MmNjNzk5YmY1MmE0M2ZiY2MzZTBhYjUxNjk1ZjI1NTVjZDdlYTA5M2E3YmRiNDNhZDYzZGM5NzE0YzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.6edPASDOAU6ApfKY81Ha8vpSuVBI5ye1-TGLATHZnAI)
    - 更多关于配置 Rasa 机器人的信息，请参考 [Rasa 官方文档](https://rasa.com/docs/)。
 
 ### 代码级自定义
